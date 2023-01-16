@@ -1,14 +1,14 @@
-The ``7-base_geometry`` module
+The ``6-base_geometry`` module
 ========================
 
 Using ``BaseGeometry``
 ----------------
 
-``BaseGeometry`` from the ``7-base_geometry`` module:
+``BaseGeometry`` from the ``6-base_geometry`` module:
 
-    >>> Basegeometry = __import__('7-base_geometry').BaseGeometry
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-    >>> bg = Basegeometry()
+    >>> bg = BaseGeometry()
 
     >>> bg.area()
     Traceback (most recent call last):
