@@ -6,7 +6,7 @@ Using ``BaseGeometry``
 
 ``BaseGeometry`` from the ``7-base_geometry`` module:
 
-    >>> BaseGeometry = __import__('6-base_geometry').BaseGeometry
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
     >>> bg = BaseGeometry()
 
