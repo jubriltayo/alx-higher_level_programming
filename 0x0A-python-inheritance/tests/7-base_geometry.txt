@@ -16,11 +16,11 @@ Using ``BaseGeometry``
 
     >>> shapeA.integer_validator()
     Traceback (most recent call last):
-    TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
     >>> shapeA.integer_validator("age")
     Traceback (most recent call last):
-    TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
 
     >>> shapeA.integer_validator("age", 1)
 
