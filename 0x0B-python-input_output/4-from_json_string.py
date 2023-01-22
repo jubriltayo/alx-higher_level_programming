@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that returns an object represented by 
+"""Module that returns an object represented by
 a JSON string
 """
 import json
