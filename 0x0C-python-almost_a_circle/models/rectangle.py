@@ -93,9 +93,9 @@ class Rectangle(Base):
         h = str(self.height)
         return (name + "(" + i + ") " + x + "/" + y + " - " + w + "/" + h)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates class with addition of attributes
-        using args
+        using args(ints) and kwargs(dict - key/value pair)
         """
         count = 1
         if args and len(args):
@@ -111,3 +111,16 @@ class Rectangle(Base):
                 elif count == 5:
                     self.y = arg
                 count += 1
+
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
