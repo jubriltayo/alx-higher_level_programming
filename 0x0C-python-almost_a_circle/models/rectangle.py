@@ -92,3 +92,22 @@ class Rectangle(Base):
         w = str(self.width)
         h = str(self.height)
         return (name + "(" + i + ") " + x + "/" + y + " - " + w + "/" + h)
+
+    def update(self, *args):
+        """Updates class with addition of attributes
+        using args
+        """
+        count = 1
+        if args and len(args):
+            for arg in args:
+                if count == 1:
+                    self.id = arg
+                elif count == 2:
+                    self.width = arg
+                elif count == 3:
+                    self.height = arg
+                elif count == 4:
+                    self.x = arg
+                elif count == 5:
+                    self.y = arg
+                count += 1
