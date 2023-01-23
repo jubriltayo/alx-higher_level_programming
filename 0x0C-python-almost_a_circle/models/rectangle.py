@@ -71,7 +71,7 @@ class Rectangle(Base):
     def display(self):
         """Prints area of rectangle with '#' to stdout"""
         for i in range(self.area()):
-            if i and not (i % self.width):
+            if i and (i % self.width == 0):
                 print()
             print("#", end="")
         print()
