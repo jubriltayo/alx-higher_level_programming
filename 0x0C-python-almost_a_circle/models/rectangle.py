@@ -76,3 +76,13 @@ class Rectangle(Base):
             print("#", end="")
         print()
         return ""
+
+    def __str__(self):
+        """Prints to stdout"""
+        name = "[Rectangle] "
+        i = str(self.id)
+        x = str(self.x)
+        y = str(self.y)
+        w = str(self.width)
+        h = str(self.height)
+        return (name + "(" + i + ") " + x + "/" + y + " - " + w + "/" + h)
