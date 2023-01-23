@@ -70,12 +70,18 @@ class Rectangle(Base):
 
     def display(self):
         """Prints area of rectangle with '#' to stdout"""
+        x_axis = self.x
+        y_axis = self.y
+        for i in range(y_axis):
+            print()
         for i in range(self.area()):
             if i and (i % self.width == 0):
                 print()
+            if not (i % self.width):
+                for j in range(x_axis):
+                    print(" ", end="")
             print("#", end="")
         print()
-        return ""
 
     def __str__(self):
         """Prints to stdout"""
