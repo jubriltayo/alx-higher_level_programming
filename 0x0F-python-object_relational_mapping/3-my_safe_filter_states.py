@@ -2,7 +2,8 @@
 """
 This script takes in an argument and prints
 the states that matches the argument
-from the database hbtn_0e_0_usa
+from the database hbtn_0e_0_usa and
+prevents SQL injection
 """
 import MySQLdb
 from sys import argv
