@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     # Print State object in specified format
     if state is None:
-        print("Nothing")
+        print("Not found")
     else:
         print(state.id)
 
