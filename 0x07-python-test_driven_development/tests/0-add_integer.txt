@@ -102,3 +102,6 @@ Case NaN 2:
 
 	>>> add_integer(0, 0)
 	0
+	
+	>>> add_integer(0)
+	98
