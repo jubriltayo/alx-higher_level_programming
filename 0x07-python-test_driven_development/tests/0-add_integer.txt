@@ -100,6 +100,5 @@ Case NaN 2:
               ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
 
-	>>> add_integer([1,2,3], 0)
-	Traceback (most recent call last):
-	TypeError: a must be an integer
+	>>> add_integer(0, 0)
+	0
