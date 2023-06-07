@@ -105,3 +105,6 @@ Case NaN 2:
 	
 	>>> add_integer(0)
 	98
+	
+	>>> add_integer(3, 0)
+	3
