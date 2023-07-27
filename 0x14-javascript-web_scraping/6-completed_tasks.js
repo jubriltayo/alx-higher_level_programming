@@ -5,9 +5,9 @@
 const request = require('request');
 const url = process.argv[2];
 
-request.get(url, (err, res, data) => {
-  if (err) {
-    console.log(err);
+request.get(url, (error, response, data) => {
+  if (error) {
+    console.error(error);
   } else {
     const todos = JSON.parse(data);
     const completedTasks = {};
