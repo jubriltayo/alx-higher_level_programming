@@ -4,15 +4,15 @@
 
 const request = require('request');
 const url = process.argv[2];
-const completedTasks = {};
 
 request(url, (err, res, data) => {
   if (err) {
     console.log(err);
   } else {
     const todos = JSON.parse(data);
+    const completedTasks = {};
 
-    todos.forEach((todo) => {
+    todos.forEach(todo => {
       if (todo.completed) {
         if (completedTasks[todo.userId]) {
           completedTasks[todo.userId]++;
