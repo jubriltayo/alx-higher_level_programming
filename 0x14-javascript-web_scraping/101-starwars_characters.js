@@ -4,7 +4,7 @@
 
 const request = require('request');
 const id = process.argv[2];
-const url = 'https://swapi-api.alx-tools.com/api/films/' + id;
+const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
 request(url, (err, res, data) => {
   if (err) {
@@ -20,10 +20,10 @@ request(url, (err, res, data) => {
       // make a request to fetch each character's data
       request(actor, (error, response, data) => {
         if (error) {
-          console.log(error);
-        } else {
-          console.log(JSON.parse(data).name);
+          reject(error);
+          return;
         }
+        resolve(JSON.parse(data).name);
       });
     });
   });
